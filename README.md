@@ -53,7 +53,7 @@ This script will adjust various hyperparameters and record the model's performan
 
 ### Visualiztion
 
-Run "src/main.ipynb" to see the training and testing results of the model with best hyper params. The best model weight will be saved in "best_model_weights".
+Run "src/main.ipynb" to see the training and testing results of the model with best hyper params. The best model weight will be saved in "best_model_weights.pkl".
 
 ## Implementation Details
 
