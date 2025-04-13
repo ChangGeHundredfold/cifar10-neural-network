@@ -1,0 +1,1 @@
+Best hyperparameters: {'lr': 1e-05, 'hls': [512, 256], 'l2_reg': 1e-06, 'act': <class 'model.neural_network.ReLU'>, 'init': 'random'}
