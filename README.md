@@ -15,10 +15,10 @@ cifar10-neural-network
 │   │   └── train.py                 # Training loop with SGD, learning rate scheduling, and model saving
 │   ├── testing
 │   │   └── test.py                  # Evaluation of the trained model on the test dataset
-│   ├── tuning
-│   │   └── hyperparameter_tuning.py  # Functions for hyperparameter tuning and performance recording
-│   └── utils
-│       └── helpers.py               # Utility functions for visualization, metrics, and logging
+│   └── optmizier
+│   |    └── optimizer.py               # Implementation of SGD
+|   ├── main_hypertuning.py              # Functions for hyperparameter tuning and performance recording
+|   └── main.ipynb                       # Visualization of the training and testing of the model with best hyperparams 
 ├── requirements.txt                  # Project dependencies
 └── README.md                         # Project documentation
 ```
@@ -60,10 +60,14 @@ This will load the saved model weights and compute the classification accuracy o
 
 To perform hyperparameter tuning, execute:
 ```
-python src/tuning/hyperparameter_tuning.py
+python src/main_hypertuning.py
 ```
 This script will adjust various hyperparameters and record the model's performance for different configurations.
 
+
+### Visualiztion
+
+Run "src/main.ipynb" to see the training and testing results of the model with best hyper params.
 ## Implementation Details
 
 - **Neural Network Architecture**: The neural network consists of an input layer, one hidden layer, and an output layer. The architecture allows customization of hidden layer sizes and activation functions.
