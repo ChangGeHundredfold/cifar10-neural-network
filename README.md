@@ -40,21 +40,7 @@ cifar10-neural-network
 
 ## Usage
 
-### Training the Model
 
-To train the neural network, run the following command:
-```
-python src/training/train.py
-```
-This will initiate the training process, and the best model weights will be saved based on validation performance.
-
-### Testing the Model
-
-To evaluate the trained model on the test dataset, run:
-```
-python src/testing/test.py
-```
-This will load the saved model weights and compute the classification accuracy on the test set.
 
 ### Hyperparameter Tuning
 
@@ -62,12 +48,13 @@ To perform hyperparameter tuning, execute:
 ```
 python src/main_hypertuning.py
 ```
-This script will adjust various hyperparameters and record the model's performance for different configurations.
+This script will adjust various hyperparameters and record the model's performance for different configurations. This .py file will output "best_hyperparameters.txt".
 
 
 ### Visualiztion
 
-Run "src/main.ipynb" to see the training and testing results of the model with best hyper params.
+Run "src/main.ipynb" to see the training and testing results of the model with best hyper params. The best model weight will be saved in "best_model_weights".
+
 ## Implementation Details
 
 - **Neural Network Architecture**: The neural network consists of an input layer, one hidden layer, and an output layer. The architecture allows customization of hidden layer sizes and activation functions.
